@@ -11,6 +11,8 @@ import { styled,alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import DeleteIcon from '@mui/icons-material/Delete';
+import { Avatar, Icon, TextField } from '@mui/material';
+import { KeyboardArrowDown, Label } from '@mui/icons-material';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -82,8 +84,21 @@ export default function NavBar() {
             minWidth:160,
             maxWidth:200,
             color:'white',
-            ml:80
-          }} startIcon={<ShoppingCartOutlinedIcon />}>Checkout (200)</Button>
+            ml:80,
+            mr:2
+          }} startIcon={<ShoppingCartOutlinedIcon />}>
+            Checkout (200)
+          </Button>
+          <Avatar 
+            alt="Travis Howard"
+            src="/images/alter.jpg" 
+            sx={{mr:1}}
+            />
+          <label><bold>User Admin</bold></label>
+          <Icon sx={{ml:1}}>
+            <KeyboardArrowDown />
+          </Icon>
+
         </Toolbar>
       </AppBar>
     </Box>
