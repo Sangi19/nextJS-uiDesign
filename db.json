@@ -1,0 +1,13 @@
+{
+    "contact": [
+      { "title": "Contact", 
+      "email": "pavi123@gmail.com / pavi456@br.in", "Mobile No": "8511658979 / 9565287842" }
+    ],
+    "Address": [
+      { "address": " c-1/135/4, Gandhi Nagar, Vadodara -390010, Gujarath, India."}
+    ],
+    "SociaMediaLinks": [
+      { "media": "media"}
+    ],
+    "statement": { "Statement": "You think it we ink it." }
+  }

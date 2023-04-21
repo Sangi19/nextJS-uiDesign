@@ -13,6 +13,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Avatar, Icon, TextField } from '@mui/material';
 import { KeyboardArrowDown, Label } from '@mui/icons-material';
+import SideBar from './SideBar';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -50,9 +51,8 @@ const Search = styled('div')(({ theme }) => ({
       paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create('width'),
       width: '100%',
-
-    },
-  }));
+    }}))
+  
 
 export default function NavBar() {
   return (
@@ -66,7 +66,8 @@ export default function NavBar() {
             aria-label="menu"
             sx={{ mr: 12 }}
           >
-            <MenuIcon />
+            {/* <MenuIcon /> */}
+          <img src='https://www.atinks.com/wp-content/uploads/2017/10/A.T-inks-logo-600-DPI-1-e1545645137933.png' height={80} width={70}/>
           </IconButton>
             <Search>
                 <SearchIconWrapper>
@@ -101,6 +102,7 @@ export default function NavBar() {
 
         </Toolbar>
       </AppBar>
+      
     </Box>
   );
 }
