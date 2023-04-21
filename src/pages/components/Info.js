@@ -8,7 +8,7 @@ import Typography from "@mui/material/Typography";
 import PersonIcon from "@mui/icons-material/Person";
 import IconButton from "@mui/material/IconButton";
 import EditIcon from "@mui/icons-material/Edit";
-import { CardActionArea, Grid, Modal, Stack } from "@mui/material";
+import { CardActionArea, Grid, Modal, Stack, TextField } from "@mui/material";
 
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import LanguageTwoToneIcon from "@mui/icons-material/LanguageTwoTone";
@@ -24,8 +24,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import ContactsIcon from '@mui/icons-material/Contacts';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import Divider from '@mui/material/Divider';
-
+import AddCircleOutlineIcon from '@mui/icons-material/AddCircleOutline';
 
 const style = {
   position: 'absolute',
@@ -277,7 +276,7 @@ export default function Info() {
                         </Typography>
                       </CardContent>
                     </Card>
-                    <Button sx={{ minWidth: 560, mr: 4, mb: 5}} variant="contained">Save</Button>
+                    <Button sx={{ minWidth: 560, mr: 4, mb: 5}} variant="contained" color="error">Save</Button>
                 </Box>
               </Card>
             </Modal>
@@ -286,12 +285,32 @@ export default function Info() {
                 <Box sx={style}>
                     
                     <Typography variant="h4" sx={{mb:1}} ><span><ArrowBackIcon /></span> Contacts</Typography>
-                    <p>Please provide the company's email and contact number</p>
-                    {/* sx={{ maxWidth: 560, mr: 4, mb: 5, minHeight: 200 }} */}
-                    
-                    <TextField id="filled-basic" label="Filled" variant="filled" />
-
-
+                    <Typography sx={{mb:3}}>Please provide the company's email and contact number</Typography>
+                    <div>
+                      <label><strong>Email Id</strong></label><br/>
+                      <TextField id="filled-basic" label="eg. salesteam.br.in" variant="filled" 
+                        sx={{ minWidth: 560, mr: 4, my: 1, minHeight: 10 }} >
+                      </TextField>
+                      <CardActions>
+                        <Button variant="outlined" color="error" startIcon={<AddCircleOutlineIcon />} 
+                          sx={{ minWidth: 560, mr: 4, mb: 1, minHeight: 10,ml:-1 }} >
+                          Add More
+                        </Button>
+                      </CardActions>
+                    </div>
+                    <div>
+                      <label><strong>Contact Number</strong></label><br/>
+                      <TextField id="filled-basic" label="eg.9876543210" variant="filled" 
+                        sx={{ minWidth: 560, mr: 4, my: 1, minHeight: 10 }} >
+                      </TextField>
+                      <CardActions>
+                        <Button variant="outlined" color="error" startIcon={<AddCircleOutlineIcon />} 
+                          sx={{ minWidth: 560, mr: 4, mb: 55, minHeight: 10,ml:-1 }} >
+                          Add More
+                        </Button>
+                      </CardActions>
+                    </div>
+                    <Button sx={{ minWidth: 560, mr: 4, mb: 5}} color="error" variant="contained">Save</Button>
                 </Box>
               </Card>
             </Modal>
