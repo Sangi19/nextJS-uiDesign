@@ -13,6 +13,7 @@ import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Avatar, Icon, TextField } from '@mui/material';
 import { KeyboardArrowDown, Label } from '@mui/icons-material';
+import SideBar from './SideBar';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -50,9 +51,8 @@ const Search = styled('div')(({ theme }) => ({
       paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create('width'),
       width: '100%',
-
-    },
-  }));
+    }}))
+  
 
 export default function NavBar() {
   return (
@@ -101,6 +101,7 @@ export default function NavBar() {
 
         </Toolbar>
       </AppBar>
+      
     </Box>
   );
 }
