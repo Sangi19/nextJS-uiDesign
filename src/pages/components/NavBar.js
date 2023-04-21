@@ -66,7 +66,8 @@ export default function NavBar() {
             aria-label="menu"
             sx={{ mr: 12 }}
           >
-            <MenuIcon />
+            {/* <MenuIcon /> */}
+          <img src='https://www.atinks.com/wp-content/uploads/2017/10/A.T-inks-logo-600-DPI-1-e1545645137933.png' height={80} width={70}/>
           </IconButton>
             <Search>
                 <SearchIconWrapper>

@@ -48,9 +48,20 @@ export default function SideBar() {
         }}
       >
         <Toolbar />
-        <Box sx={{ overflow: 'auto' }}>
-          
+        <Box sx={{ overflow: 'auto', mt:3,mb:5}}>
+
         <List sx={{mt: 5}}>
+
+            <ListItem disablePadding sx={{ display: "black"}} >
+              <ListItemButton>
+                <ListItemIcon>
+                <img src='https://www.atinks.com/wp-content/uploads/2017/10/A.T-inks-logo-600-DPI-1-e1545645137933.png' height={70} width={60} />
+                </ListItemIcon>
+                <ListItemText>
+                  <strong>A.T.inks</strong> 
+                  </ListItemText>
+              </ListItemButton>
+            </ListItem>
             <ListItem disablePadding sx={{ display: "black"}} onClick={() => setSideBarData("")}>
               <ListItemButton>
                 <ListItemIcon>

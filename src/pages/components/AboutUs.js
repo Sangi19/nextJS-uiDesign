@@ -8,17 +8,26 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
-import { Grid, List, ListItem, ListItemText } from '@mui/material';
+import { Grid, List, ListItem, ListItemText, Stack } from '@mui/material';
 import Info from './Info';
 import FAQ from './FAQ';
 import TermsConditions from './TermsConditions';
+import VerifiedIcon from '@mui/icons-material/Verified';
 
 export default function AboutUs() {
   const [data, setData] = useState("")
   return (
     <div>
-      <Grid sx={{mt: 5, ml: 5 }}>
+      <Grid sx={{mt: 8, ml: 5 }}>
       <h1> About Us</h1>
+      <Stack>
+        <img src='https://www.atinks.com/wp-content/uploads/2017/10/A.T-inks-logo-600-DPI-1-e1545645137933.png' height={80} width={70}/>
+        <Button sx={{ml:-140}}
+         startIcon={<VerifiedIcon />}
+        >        
+          <a href='https://www.atinks.com/' >Verify Company</a>
+        </Button>
+      </Stack>
       <p> Loream ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum esta, maltis tellus
          <span> < EditIcon /> </span>
       </p> 
