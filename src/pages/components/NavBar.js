@@ -2,18 +2,14 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
-import { styled,alpha } from '@mui/material/styles';
+import { styled } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
-import DeleteIcon from '@mui/icons-material/Delete';
-import { Avatar, Icon, TextField } from '@mui/material';
-import { KeyboardArrowDown, Label } from '@mui/icons-material';
-import SideBar from './SideBar';
+import { Avatar, Icon } from '@mui/material';
+import { KeyboardArrowDown } from '@mui/icons-material';
 
 const Search = styled('div')(({ theme }) => ({
     position: 'relative',
@@ -47,7 +43,6 @@ const Search = styled('div')(({ theme }) => ({
     color: 'inherit',
     '& .MuiInputBase-input': {
       padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
       paddingLeft: `calc(1em + ${theme.spacing(4)})`,
       transition: theme.transitions.create('width'),
       width: '100%',
@@ -66,7 +61,6 @@ export default function NavBar() {
             aria-label="menu"
             sx={{ mr: 12 }}
           >
-            {/* <MenuIcon /> */}
           <img src='https://www.atinks.com/wp-content/uploads/2017/10/A.T-inks-logo-600-DPI-1-e1545645137933.png' height={80} width={70}/>
           </IconButton>
             <Search>
