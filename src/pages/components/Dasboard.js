@@ -5,7 +5,7 @@ export default function Dasboard() {
   return (
     <div>
       <Typography sx={{mt:8}}><strong>Dasboard</strong> </Typography>
-
-      </div>  
+      <p>Please click on the About us page</p>
+    </div>  
   )
 }
