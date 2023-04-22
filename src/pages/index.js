@@ -7,11 +7,7 @@ export default function Home() {
     <>
       <div>
       <Box sx={{ flexGrow: 1 }}>
-          <Grid item xs={12}>
-            <div>
-              <MainBar />
-            </div>
-        </Grid>
+        <MainBar />
       </Box>
       </div>
     </>
