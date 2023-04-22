@@ -26,7 +26,7 @@ import PaymentsIcon from '@mui/icons-material/Payments';
 
 const drawerWidth = 240;
 
-export default function SideBar() {
+export default function MainBar() {
    const [sideBarData, setSideBarData] =useState("Dasboard")
 
   return (

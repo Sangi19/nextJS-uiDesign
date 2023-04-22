@@ -38,7 +38,7 @@ const style = {
   border: '2px solid #000',
   boxShadow: 24,
   p: 4,
-  mt:4
+  mt:1
 };
 
 export default function Info() {
@@ -66,10 +66,10 @@ export default function Info() {
               display: 'flex', 
               flexWrap:"wrap",
               height: 400,
-              mt:-9,ml:2,
+              mt:-15,ml:2,
             }}
               >
-              <Card sx={{ minWidth: 395, mr: 4, mb: 10, minHeight: 200 }}>
+              <Card sx={{ minWidth: 395, mr: 4, mb: 5, minHeight: 200 }}>
                 <CardContent>
                   <Stack
                     direction="row"
@@ -101,7 +101,7 @@ export default function Info() {
                     </Typography>
                 </CardContent>
               </Card>
-              <Card sx={{ minWidth: 395, mr: 4, mb: 10, minHeight: 200 }}>
+              <Card sx={{ minWidth: 395, mr: 4, mb: 5, minHeight: 200 }}>
                 <CardContent>
                   <Typography variant="body2">
                     <IconButton>
@@ -120,7 +120,7 @@ export default function Info() {
                   </Typography>
                 </CardContent>
               </Card>
-              <Card sx={{ minWidth: 395, mr: 4, mb: 10, minHeight: 200 }}>
+              <Card sx={{ minWidth: 395, mr: 4, mb: 5, minHeight: 200 }}>
                 <CardContent>
                   <Typography variant="body2">
                     <IconButton>
@@ -139,7 +139,7 @@ export default function Info() {
                   </Typography>
                 </CardContent>
               </Card>
-              <Card sx={{ minWidth: 395, mr: 4, mb: 10, minHeight: 200 }}>
+              <Card sx={{ minWidth: 395, mr: 4, mb: 5, minHeight: 200 }}>
                 <CardContent>
                   <Typography variant="body2" >
                     <IconButton size="medium">
@@ -163,7 +163,7 @@ export default function Info() {
                   </Typography>
                 </CardContent>
               </Card>
-              <Card sx={{ minWidth: 395, mr: 4, mb: 10, minHeight: 200 }}>
+              <Card sx={{ minWidth: 395, mr: 4, mb: 5, minHeight: 200 }}>
                 <CardContent>
                   <Typography variant="body2">
                     <IconButton>
